@@ -1,0 +1,47 @@
+﻿<div ng-controller="Umbraco.Dashboard.IntelligentMediaSettingsController">
+	<table class="table table-striped">
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<h3>Azure</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>Subscription Key</td>
+				<td><input type="text" ng-model="settings.AzureSubscriptionKey" no-Dirty-Check /></td>
+			</tr>
+			<tr>
+				<td>Region</td>
+				<td>
+					<select ng-model="settings.AzureRegion" no-Dirty-Check>
+						<option value="westus">West US</option>
+						<option value="westus2">West US 2</option>
+						<option value="eastus">East US</option>
+						<option value="eastus">East US 2</option>
+						<option value="westcentralus">West Central US</option>
+						<option value="southcentralus">South Central US</option>
+						<option value="westeurope">West Europe</option>
+						<option value="northeurope">North Europe</option>
+						<option value="southeastasia">Southeast Asia</option>
+						<option value="eastasia">East Asia</option>
+						<option value="australiaeast">Australia East</option>
+						<option value="brazilsouth">Brazil South</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<h3>Google</h3>
+				</td>
+			</tr>
+		<tr>
+			<td>Api Key</td>
+			<td><input type="text" ng-model="settings.GoogleApiKey" no-Dirty-Check /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button class="btn btn-default" ng-click="save()">Save</button></td>
+		</tr>
+		</tbody>
+	</table>
+</div>

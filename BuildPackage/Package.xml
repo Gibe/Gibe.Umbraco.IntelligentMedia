@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>Intelligent Media for Umbraco</name>
+      <version>1.0.0</version>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://our.umbraco.org/projects/developer-tools/TODO/</url>
+      <requirements>
+        <major>7</major>
+        <minor>6</minor>
+        <patch>8</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Gibe Digital</name>
+      <website>https://www.gibedigital.com/</website>
+    </author>
+    <readme>
+      <![CDATA[<p></p>]]>
+    </readme>
+  </info>
+
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+
+  <Actions>
+    <Action runat="install" alias="IntelligentMediaSettings" dashboardAlias="IntelligentMediaSettings">
+      <section>
+        <areas>
+          <area>developer</area>
+        </areas>
+        <tab caption="Intelligent Media Settings">
+          <control>/App_Plugins/IntelligentMedia/settings.html</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+
+  <control />
+  <files />
+
+</umbPackage>
