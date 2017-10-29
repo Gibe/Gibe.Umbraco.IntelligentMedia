@@ -232,20 +232,18 @@
     <Compile Include="Controllers\IntelligentMediaSettingsController.cs" />
     <Compile Include="Google\GoogleVisionApi.cs" />
     <Compile Include="Google\GoogleVisionResponse.cs" />
+    <Compile Include="IIntelligentMediaService.cs" />
     <Compile Include="IntelligentMediaService.cs" />
     <Compile Include="IntelligentMediaSettings.cs" />
     <Compile Include="IVisionApi.cs" />
     <Compile Include="IVisionResponse.cs" />
-    <Compile Include="MediaEvents.cs" />
+    <Compile Include="IntelligentMediaEventHandler.cs" />
     <Compile Include="ProbableTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="config\imageprocessor\cache.config" />
-    <None Include="config\imageprocessor\processing.config" />
-    <None Include="config\imageprocessor\security.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

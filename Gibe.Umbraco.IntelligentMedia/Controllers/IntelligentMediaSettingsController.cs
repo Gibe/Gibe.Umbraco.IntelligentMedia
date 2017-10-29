@@ -3,7 +3,7 @@ using Umbraco.Web.WebApi;
 
 namespace Gibe.Umbraco.IntelligentMedia.Controllers
 {
-	public class IntelligentMediaSettingsController : UmbracoAuthorizedApiController
+	public class IntelligentMediaSettingsController : UmbracoApiController
 	{
 		private readonly IntelligentMediaService _intelligentMediaService;
 

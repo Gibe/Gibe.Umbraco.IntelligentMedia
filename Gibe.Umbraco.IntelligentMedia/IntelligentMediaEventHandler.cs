@@ -8,7 +8,7 @@ using Umbraco.Core.Services;
 
 namespace Gibe.Umbraco.IntelligentMedia
 {
-	public class MediaEvents : ApplicationEventHandler
+	public class IntelligentMediaEventHandler : ApplicationEventHandler
 	{
 		protected override void ApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
 		{

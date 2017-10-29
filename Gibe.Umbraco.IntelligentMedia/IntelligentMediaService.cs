@@ -5,13 +5,6 @@ using Umbraco.Core.IO;
 
 namespace Gibe.Umbraco.IntelligentMedia
 {
-
-	public interface IIntelligentMediaService
-	{
-		IEnumerable<IVisionApi> VisionApis();
-		SettingsService<IntelligentMediaSettings> Settings();
-	}
-
 	public class IntelligentMediaService : IIntelligentMediaService
 	{
 		public IEnumerable<IVisionApi> VisionApis()
