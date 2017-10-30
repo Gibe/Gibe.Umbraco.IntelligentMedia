@@ -2,6 +2,8 @@
 
 ## Installation Instructions
 
+Install via nuget ``` Install-Package Gibe.Umbraco.IntelligentMedia ```
+
 ### Dashboard
 
 Add the following to the end of <sections> in config/Dashboard.config
@@ -32,13 +34,12 @@ Add the end of the <FileSystemProviders> section of config/FileSystemProviders.c
 
 Add the following to the media you want to generate machine learning data
 
-| Property Alias | Type |
-| -------------- | ---- |
-| tags           | Tags |
-| categories     | Tags |
-| description    | Textstring |
-| json           | Textarea |
-| primaryColour  | Textstring |
-| backgroundColour | Textstring |
-| numberOfFaces | Numeric |
-
+| Property Alias   | Type          |
+| ---------------- | ------------- |
+| tags             | Tags          |
+| categories       | Tags          |
+| description      | Textstring    |
+| json             | Textarea      |
+| primaryColour    | Textstring    |
+| backgroundColour | Textstring    |
+| numberOfFaces    | Numeric       |
