@@ -1,20 +1,5 @@
 ﻿{
-	"css": [
-		"~/App_Plugins/IntelligentMedia/dashboard.css"
-	],
 	"javascript": [
-		"~/App_Plugins/IntelligentMedia/IntelligentMedia.controller.js",
-		"~/App_Plugins/IntelligentMedia/IntelligentMediaPicker.controller.js",
-		"~/App_Plugins/IntelligentMedia/IntelligentMediaPickerDialog.controller.js",
 		"~/App_Plugins/IntelligentMedia/IntelligentMediaSettings.controller.js"
-	],
-	"propertyEditors": [
-		{
-			"alias": "intelligentMediaPicker",
-			"name": "Intelligent Media Picker",
-			"editor": {
-				"view": "~/App_Plugins/IntelligentMedia/picker.html"
-			}
-		}
 	]
 }

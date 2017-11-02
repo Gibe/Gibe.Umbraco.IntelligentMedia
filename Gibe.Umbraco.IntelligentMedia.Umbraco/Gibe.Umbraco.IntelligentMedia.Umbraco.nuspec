@@ -13,7 +13,6 @@
     <tags>Umbraco Intelligent Media Machine Learning</tags>
 	  <dependencies>
 		  <dependency id="UmbracoCms" version="7.6.8" />
-			<dependency id="Moriyama.AzureSearch.Umbraco" version="1.0.1" />
 	  </dependencies>
   </metadata>
   <files>
