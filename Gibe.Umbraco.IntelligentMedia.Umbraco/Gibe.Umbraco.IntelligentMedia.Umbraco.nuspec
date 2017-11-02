@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Gibe.Umbraco.IntelligentMedia</id>
-    <version>$version</version>
+    <version>$version$</version>
     <title>Umbraco Intelligent Media</title>
     <authors>Gibe Digital Ltd</authors>
     <owners>Gibe Digital Ltd</owners>
