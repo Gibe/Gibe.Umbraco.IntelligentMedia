@@ -294,14 +294,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\IntelligentMedia\dashboard.css" />
-    <Content Include="App_Plugins\IntelligentMedia\dashboard.html" />
-    <Content Include="App_Plugins\IntelligentMedia\IntelligentMedia.controller.js" />
-    <Content Include="App_Plugins\IntelligentMedia\IntelligentMediaPicker.controller.js" />
-    <Content Include="App_Plugins\IntelligentMedia\IntelligentMediaPickerDialog.controller.js" />
     <Content Include="App_Plugins\IntelligentMedia\IntelligentMediaSettings.controller.js" />
-    <Content Include="App_Plugins\IntelligentMedia\picker.html" />
-    <Content Include="App_Plugins\IntelligentMedia\pickerdialog.html" />
     <Content Include="App_Plugins\IntelligentMedia\settings.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />

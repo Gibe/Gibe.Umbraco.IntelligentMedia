@@ -54,6 +54,8 @@ namespace Gibe.Umbraco.IntelligentMedia
 				Categories = categories,
 				Descriptions = descriptions,
 				NumberOfFaces = Math.Max(visionMedia.NumberOfFaces??0, response.NumberOfFaces??0),
+				PrimaryColour = visionMedia.PrimaryColour ?? response.PrimaryColour,
+				BackgroundColour = visionMedia.BackgroundColour ?? response.BackgroundColour,
 				Json = json
 			};
 		}
