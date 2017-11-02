@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Gibe.Umbraco.IntelligentMedia</id>
-    <version>1.0.0</version>
+    <version>$version</version>
     <title>Umbraco Intelligent Media</title>
     <authors>Gibe Digital Ltd</authors>
     <owners>Gibe Digital Ltd</owners>
@@ -11,6 +11,10 @@
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Umbraco Intelligent Media Machine Learning</tags>
+	  <dependencies>
+		  <dependency id="UmbracoCms" version="7.6.8" />
+			<dependency id="Moriyama.AzureSearch.Umbraco" version="1.0.1" />
+	  </dependencies>
   </metadata>
   <files>
     <file src="bin\Gibe.Umbraco.IntelligentMedia.dll" target="lib" />
