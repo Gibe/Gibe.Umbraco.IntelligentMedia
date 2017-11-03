@@ -16,7 +16,7 @@ namespace Gibe.Umbraco.IntelligentMedia
 			
 		}
 
-		public T Fetch()
+		public T Fetch() // TODO : Cache this
 		{
 			if (!_fileSystem.FileExists(Filename))
 			{
@@ -31,7 +31,7 @@ namespace Gibe.Umbraco.IntelligentMedia
 			}
 		}
 
-		public void Update(T settings)
+		public void Update(T settings) // TODO : Invalidate cache
 		{
 			using (var settingsMemoryStream = new MemoryStream())
 			{

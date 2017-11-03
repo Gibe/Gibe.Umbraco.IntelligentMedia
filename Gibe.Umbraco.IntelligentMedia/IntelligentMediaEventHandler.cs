@@ -28,8 +28,15 @@ namespace Gibe.Umbraco.IntelligentMedia
 				var visionMedia = new VisionMedia();
 				foreach (var api in service.VisionApis()) 
 				{
-					var visionResponse = await api.MakeRequest(mediaItem).ConfigureAwait(false);
-					visionMedia = Merge(visionMedia, visionResponse);
+					try
+					{
+						var visionResponse = await api.MakeRequest(mediaItem).ConfigureAwait(false);
+						visionMedia = Merge(visionMedia, visionResponse);
+					}
+					catch (Exception) // TODO : Make this better
+					{
+						// Ignore for now
+					}
 				}
 				UpdateMediaItem(mediaItem, visionMedia);
 			}
@@ -53,7 +60,7 @@ namespace Gibe.Umbraco.IntelligentMedia
 				Tags = tags,
 				Categories = categories,
 				Descriptions = descriptions,
-				NumberOfFaces = Math.Max(visionMedia.NumberOfFaces??0, response.NumberOfFaces??0),
+				NumberOfFaces = Math.Max(visionMedia.NumberOfFaces??0, response.NumberOfFaces??0), // TODO : Strategy for this
 				PrimaryColour = visionMedia.PrimaryColour ?? response.PrimaryColour,
 				BackgroundColour = visionMedia.BackgroundColour ?? response.BackgroundColour,
 				Json = json
@@ -62,7 +69,7 @@ namespace Gibe.Umbraco.IntelligentMedia
 
 		public void UpdateMediaItem(IMedia mediaItem, VisionMedia visionMedia)
 		{
-
+			// TODO : Configurable which are set and whether to override name
 			mediaItem.Name = visionMedia.Name;
 			mediaItem.SetValue("tags",
 				String.Join(",", visionMedia.Tags

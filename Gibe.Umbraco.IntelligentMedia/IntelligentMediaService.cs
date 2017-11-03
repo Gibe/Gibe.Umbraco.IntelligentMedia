@@ -13,7 +13,7 @@ namespace Gibe.Umbraco.IntelligentMedia
 			var visionApi = new GoogleVisionApi(settings);
 			return new List<IVisionApi> {visionApi, new AzureVisionApi(settings) };
 		}
-
+		
 		public SettingsService<IntelligentMediaSettings> Settings()
 		{
 			return new SettingsService<IntelligentMediaSettings>(FileSystemProviderManager.Current
