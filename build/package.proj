@@ -110,7 +110,7 @@
 
 	<!-- COMPILE -->
 	<Target Name="Compile" DependsOnTargets="UpdateAssemblyInfo">
-		<MSBuild Projects="$(ProjectDir)\Gibe.LinkPicker.Umbraco.csproj" Properties="Configuration=$(BuildConfig)" />
+		<MSBuild Projects="$(ProjectDir)\Gibe.Umbraco.IntelligentMedia.csproj" Properties="Configuration=$(BuildConfig)" />
 	</Target>
 
 	<!-- PREPARE FILES -->
